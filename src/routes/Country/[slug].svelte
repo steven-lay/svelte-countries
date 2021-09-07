@@ -25,7 +25,7 @@ export let country;
     <a href="/" class="font-bold !no-underline !text-lg">← Go back</a>
 
     <h1 class="!mt-8">Data for {country.name}</h1>
-    <img src={country.flag} alt="Flag of {country.name}" class="w-1/2" />
+    <img src={country.flag} alt="Flag of {country.name}" class="w-full md:w-1/2" />
     <ul>
         <li><b>Native name:</b> {country.nativeName}</li>
         <li><b>Demonym:</b> {country.demonym}</li>

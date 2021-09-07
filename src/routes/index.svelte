@@ -17,7 +17,7 @@ async function getCountries() {
         <h1 class="text-center !mb-0">Country information</h1>
         <p class="text-center">Choose a country to show some facts about it.</p>
 
-        <div class="grid grid-cols-2">
+        <div class="grid grid-cols-1 md:grid-cols-2">
             {#each data as item}
                 <div class="text-center border border-gray-200">
                     <a href="Country/{item.name}">
@@ -25,7 +25,7 @@ async function getCountries() {
                             <img
                                 src={item.flag}
                                 alt="Flag of {item.name}"
-                                class="h-16 mx-auto"
+                                class="h-24 md:h-16 mx-auto"
                                 loading="lazy" />
                         </div>
                         <div>

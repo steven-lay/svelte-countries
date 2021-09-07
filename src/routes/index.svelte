@@ -20,7 +20,7 @@ async function getCountries() {
         <div class="grid grid-cols-1 md:grid-cols-2">
             {#each data as item}
                 <div class="text-center border border-gray-200">
-                    <a href="Country/{item.name}">
+                    <a class="!no-underline" href="Country/{item.name}">
                         <div>
                             <img
                                 src={item.flag}
@@ -29,7 +29,7 @@ async function getCountries() {
                                 loading="lazy" />
                         </div>
                         <div>
-                            <h3 class="no-underline">{item.name}</h3>
+                            <h3>{item.name}</h3>
                         </div>
                     </a>
                 </div>
